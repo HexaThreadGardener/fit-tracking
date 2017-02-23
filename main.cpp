@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
 
     Mat result;
 
-	capture.open("test.mp4");
+	capture.open(argv[1]);
 
 	if (!capture.isOpened()) //若打开失败
 	{
