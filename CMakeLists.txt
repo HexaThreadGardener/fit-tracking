@@ -17,3 +17,6 @@ target_link_libraries(lift ${OpenCV_LIBS})
 
 add_executable(stair main_stair.cpp ConnectedComponents.cpp)
 target_link_libraries(stair ${OpenCV_LIBS})
+
+add_executable(north_gate main_north.cpp ConnectedComponents.cpp)
+target_link_libraries(north_gate ${OpenCV_LIBS})
