@@ -11,3 +11,6 @@ target_link_libraries(east_gate ${OpenCV_LIBS})
 add_executable(west_gate main_east_west.cpp codebook.cpp)
 target_compile_definitions(west_gate PRIVATE CC_SCALE=200) # "scale" parameter for ConnectedComponents
 target_link_libraries(west_gate ${OpenCV_LIBS})
+
+add_executable(lift main_lift.cpp)
+target_link_libraries(lift ${OpenCV_LIBS})
