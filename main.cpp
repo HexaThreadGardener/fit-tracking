@@ -268,7 +268,7 @@ int main(int argc, char* argv[])
 			erode(frMat, frMat, cv::Mat(), cv::Point(-1, -1), 3);//形态学滤波：腐蚀
 			dilate(frMat, frMat, cv::Mat(), cv::Point(-1, -1), 5);//形态学滤波：膨胀
 
-			ConnectedComponents(frMat, 0, 3600, numbersd, 1, boundings, Point(-1, -1));
+			ConnectedComponents(frMat, 0, CC_SCALE, numbersd, 1, boundings, Point(-1, -1));
 
  //跟踪代码起始位置
 
